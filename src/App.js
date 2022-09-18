@@ -5,23 +5,21 @@ import Contact from './components/contact';
 import Header from './components/Header';
 import Post from './components/Posts/post';
 import { PostStoreProvider } from './store/postStore';
+import { Provider } from 'react-redux';
+import { store } from './store/postStore-redux';
 
 function App() {
   return (
-    <PostStoreProvider>
+    <Provider store={store}>
     <div className="App">
       <Header/>
       <Routes>
         <Route path = "/" element = {<Post/>}/>
-      </Routes>
-      <Routes>
         <Route path = "/add-post" element = {<AddPost/>}/>
-      </Routes>
-      <Routes>
         <Route path = "/contact" element = {<Contact/>}/>
       </Routes>
     </div>
-    </PostStoreProvider>
+    </Provider>
   );
 }
 

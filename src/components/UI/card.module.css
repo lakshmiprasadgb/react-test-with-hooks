@@ -1,0 +1,8 @@
+.card{
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
