@@ -6,7 +6,7 @@ const Header = () => {
         <h2>Test application</h2>
         <ul>
             <li><Link to="add-post">Add Posts</Link></li>
-            <li><Link to="contact">Contact</Link></li>
+            <li><Link to="/">Posts</Link></li>
         </ul>
     </div>)
 }

@@ -13,3 +13,9 @@
     align-items: center;
     gap: 15px;
 }
+.headerWrap a,
+.headerWrap a:visited,
+.headerWrap a:active{
+    color : #fff;
+    text-decoration: none;
+}

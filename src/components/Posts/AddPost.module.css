@@ -1,0 +1,29 @@
+.formWrapper{
+    max-width: 600px;
+    padding: 15px 30px;
+    margin: auto;
+    text-align: left;
+    margin-top: 30px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
+
+.formWrapper label,
+.formWrapper input,
+.formWrapper textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+.inputWrapper{
+    margin-bottom : 15px;
+}
+.formWrapper button{
+    padding: 10px;
+    border: 0px;
+    background: green;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-top: 15px;
+}

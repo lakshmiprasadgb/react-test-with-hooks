@@ -1,12 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import AddPost from './components/AddPost';
+import AddPost from './components/Posts/AddPost';
 import Contact from './components/contact';
 import Header from './components/Header';
-import Post from './components/post';
+import Post from './components/Posts/post';
+import { PostStoreProvider } from './store/postStore';
 
 function App() {
   return (
+    <PostStoreProvider>
     <div className="App">
       <Header/>
       <Routes>
@@ -19,6 +21,7 @@ function App() {
         <Route path = "/contact" element = {<Contact/>}/>
       </Routes>
     </div>
+    </PostStoreProvider>
   );
 }
 
